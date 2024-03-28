@@ -11,7 +11,7 @@ Odpowiedzialny będzie on za obsługę naszych czujników, pompy wodnej oraz wy�
 - Wyświetlacz LCD.
 ### ➖ Wydrukowanie obudowy/doniczki w drukarce 3D:
 ## 💡 Schemat pogladowy działania:
-![alt text](schemat_poglądowy.jpeg "Schemat pogladowy")
+![alt text](schemat_poglądowy.jpg "Schemat pogladowy")
 
 
 
