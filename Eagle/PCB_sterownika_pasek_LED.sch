@@ -4471,17 +4471,17 @@ grid 2.54 mm</description>
 <parts>
 <part name="WZMACNIACZ" library="linear" deviceset="TL081" device="P"/>
 <part name="IC3" library="st-microelectronics" deviceset="NE555" device=""/>
-<part name="R2" library="eagle-ltspice" deviceset="R" device="0204/7"/>
+<part name="R2" library="eagle-ltspice" deviceset="R" device="0204/7" value="1k"/>
 <part name="R3" library="eagle-ltspice" deviceset="R" device="0204/7"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="025-024X044"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="025-024X044" value="1u"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="eagle-ltspice" deviceset="R" device="0204/7"/>
+<part name="R1" library="eagle-ltspice" deviceset="R" device="0204/7" value="10k"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="C2" library="rcl" deviceset="C-EU" device="025-024X044"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="025-024X044" value="100n"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="R4" library="eagle-ltspice" deviceset="R" device="0204/7"/>
@@ -4489,9 +4489,9 @@ grid 2.54 mm</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="R5" library="eagle-ltspice" deviceset="R" device="0204/7"/>
+<part name="R5" library="eagle-ltspice" deviceset="R" device="0204/7" value="100"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="R6" library="eagle-ltspice" deviceset="R" device="0204/7"/>
+<part name="R6" library="eagle-ltspice" deviceset="R" device="0204/7" value="1k"/>
 <part name="P+7" library="supply1" deviceset="+12V" device=""/>
 <part name="12V" library="con-ptr500" deviceset="AK500/2" device=""/>
 <part name="P+8" library="supply1" deviceset="+12V" device=""/>
@@ -4523,8 +4523,8 @@ grid 2.54 mm</description>
 <instance part="R4" gate="G$1" x="78.74" y="96.52"/>
 <instance part="P+5" gate="VCC" x="86.36" y="96.52" rot="R270"/>
 <instance part="GND5" gate="1" x="48.26" y="96.52" rot="R270"/>
-<instance part="P+6" gate="VCC" x="88.9" y="81.28"/>
-<instance part="GND6" gate="1" x="88.9" y="60.96"/>
+<instance part="P+6" gate="VCC" x="88.9" y="86.36"/>
+<instance part="GND6" gate="1" x="88.9" y="55.88"/>
 <instance part="R5" gate="G$1" x="106.68" y="71.12" rot="R180"/>
 <instance part="GND7" gate="1" x="124.46" y="66.04"/>
 <instance part="R6" gate="G$1" x="129.54" y="96.52" rot="R270"/>
@@ -4542,22 +4542,16 @@ grid 2.54 mm</description>
 <busses>
 </busses>
 <nets>
-<net name="N$3" class="0">
-<segment>
-<pinref part="WZMACNIACZ" gate="A" pin="-IN"/>
-<wire x1="83.82" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="WZMACNIACZ" gate="A" pin="+IN"/>
-<wire x1="83.82" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="73.66" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="96.52" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
 <junction x="68.58" y="96.52"/>
+<pinref part="WZMACNIACZ" gate="A" pin="+IN"/>
+<wire x1="83.82" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4596,6 +4590,7 @@ grid 2.54 mm</description>
 <segment>
 <pinref part="WZMACNIACZ" gate="A" pin="V-"/>
 <pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="88.9" y1="58.42" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="12V" gate="-1" pin="KL"/>
@@ -4634,6 +4629,7 @@ grid 2.54 mm</description>
 <segment>
 <pinref part="WZMACNIACZ" gate="A" pin="V+"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
+<wire x1="88.9" y1="83.82" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
@@ -4660,6 +4656,8 @@ grid 2.54 mm</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="33.02" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="WZMACNIACZ" gate="A" pin="-IN"/>
+<wire x1="68.58" y1="68.58" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
