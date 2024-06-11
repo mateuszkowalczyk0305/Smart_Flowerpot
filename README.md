@@ -23,6 +23,7 @@ minimalistyczny wygląd
 Do zaprojektowania analogowej części układu wykorzystano program LTspice 
 , Jest to część układu odpowiedzialna za generowanie sygnału PWM o
 zmiennym wypełnieniu, a tym samym sterująca oświetleniem doniczki.
+
 ![LTspice](ltspice.jpg "Schemat pogladowy LTspice")
 #### Szczegółowy opis układu:
 Głównym elementem powyższego układu analogowego jest układ scalony
@@ -57,6 +58,7 @@ przepływać przez diody wynosi 1.72V, jest to wartość Vth(Gate Threshold Volt
 poniżej zakresu podanego przez producenta, jednak należy wziąć pod uwagę, że
 warunki dla których te zakresy zostały podane znacznie odbiegają od warunków w
 zaprojektowanym, na potrzeby tego projektu układzie.
+
 ![LTspice_Symulacja](ltspice_symulacja.jpg "Symulacja LTspice")
 ### ➖ Eagle:
 #### Schemat układu:
@@ -81,6 +83,7 @@ połączeń została przemyślana i kilkukrotnie była optymalizowana, tak aby s
 kryteria i jednocześnie była uproszczona w jak największym stopniu. Zastosowano
 trzy listwy zaciskowe - anody znajdują się po prawej stronie, natomiast katody po
 lewej.
+
 ![PCB](PCB.jpg "Projekt PCB")
 ### ➖ Wykaz elementów:
 Elementy wykorzystane do przygotowania płytki drukowanej:
