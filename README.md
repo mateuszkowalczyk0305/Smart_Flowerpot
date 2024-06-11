@@ -58,7 +58,8 @@ poniżej zakresu podanego przez producenta, jednak należy wziąć pod uwagę, �
 warunki dla których te zakresy zostały podane znacznie odbiegają od warunków w
 zaprojektowanym, na potrzeby tego projektu układzie.
 ![LTspice_Symulacja](ltspice_symulacja.jpg "Symulacja LTspice")
-### ➖ Eagle - projekt płytki PCB:
+### ➖ Eagle:
+#### Schemat układu:
 Następnym krokiem po zaprojektowaniu układu i jego symulacji w programie
 LTspice było wykonanie schematu płytki PCB w programie Eagle. W pierwszej
 kolejności należało wykonać schemat układu w sposób podobny do wykonanego
@@ -69,6 +70,7 @@ można wyróżnić dwa bloki zasilające, główny obwód NE555 oraz wzmacniacza
 wykorzystywanego jako komparator i obwód paska diod LED z tranzystorem
 pełniącym rolę klucza między obwodem głównym, a obwodem diod LED.
 ![Eagle](eagle_schemat.jpg "Schemat ukladu")
+#### Projekt PCB:
 Następnie wykonano projekt płytki obwodu drukowanego z topologią
 połączeń, wszystkie ścieżki poprowadzono w warstwie dolnej, przy
 projektowaniu stosowano się do zasad zamieszczonych w dołączonym pliku
