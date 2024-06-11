@@ -84,7 +84,7 @@ kryteria i jednocześnie była uproszczona w jak największym stopniu. Zastosowa
 trzy listwy zaciskowe - anody znajdują się po prawej stronie, natomiast katody po
 lewej.
 
-![PCB](zdjecia\PCB.jpg "Projekt PCB")
+![PCB](zdjecia/PCB.jpg "Projekt PCB")
 ### ➖ Wykaz elementów:
 Elementy wykorzystane do przygotowania płytki drukowanej:
 - NE555
