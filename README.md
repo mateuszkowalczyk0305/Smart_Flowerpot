@@ -18,13 +18,13 @@ zależnym od odczytu z czujnika natężenia światła(fotorezystorem)
 - Wybór obudowy zapewniającej schludny, stosunkowo innowacyjny oraz
 minimalistyczny wygląd
 ## 💡 Schemat pogladowy działania:
-![schemat](zdjecia\schemat_poglądowy.jpg "Schemat pogladowy")
+![schemat](zdjecia/schemat_poglądowy.jpg "Schemat pogladowy")
 ### ➖ Sterownik paska LED 'Smart_Flowerpot/LTspice':
 Do zaprojektowania analogowej części układu wykorzystano program LTspice 
 , Jest to część układu odpowiedzialna za generowanie sygnału PWM o
 zmiennym wypełnieniu, a tym samym sterująca oświetleniem doniczki.
 
-![LTspice](zdjecia\ltspice.jpg "Schemat pogladowy LTspice")
+![LTspice](zdjecia/ltspice.jpg "Schemat pogladowy LTspice")
 #### Szczegółowy opis układu:
 Głównym elementem powyższego układu analogowego jest układ scalony
 NE555(Rys.3). Odpowiada on za generację sygnału PWM, układ ten może
@@ -59,7 +59,7 @@ poniżej zakresu podanego przez producenta, jednak należy wziąć pod uwagę, �
 warunki dla których te zakresy zostały podane znacznie odbiegają od warunków w
 zaprojektowanym, na potrzeby tego projektu układzie.
 
-![LTspice_Symulacja](zdjecia\ltspice_symulacja.jpg "Symulacja LTspice")
+![LTspice_Symulacja](zdjecia/ltspice_symulacja.jpg "Symulacja LTspice")
 ### ➖ Eagle:
 #### Schemat układu:
 Następnym krokiem po zaprojektowaniu układu i jego symulacji w programie
@@ -72,7 +72,7 @@ można wyróżnić dwa bloki zasilające, główny obwód NE555 oraz wzmacniacza
 wykorzystywanego jako komparator i obwód paska diod LED z tranzystorem
 pełniącym rolę klucza między obwodem głównym, a obwodem diod LED.
 
-![Eagle](zdjecia\eagle_schemat.jpg "Schemat ukladu")
+![Eagle](zdjecia/eagle_schemat.jpg "Schemat ukladu")
 #### Projekt PCB:
 Następnie wykonano projekt płytki obwodu drukowanego z topologią
 połączeń, wszystkie ścieżki poprowadzono w warstwie dolnej, przy
