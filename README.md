@@ -69,6 +69,7 @@ bądź innego elementu umożliwiającego podłączenie zasilania. Na schemacie
 można wyróżnić dwa bloki zasilające, główny obwód NE555 oraz wzmacniacza
 wykorzystywanego jako komparator i obwód paska diod LED z tranzystorem
 pełniącym rolę klucza między obwodem głównym, a obwodem diod LED.
+
 ![Eagle](eagle_schemat.jpg "Schemat ukladu")
 #### Projekt PCB:
 Następnie wykonano projekt płytki obwodu drukowanego z topologią
